@@ -59,6 +59,13 @@ classicfootballshirts.com
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   Toegankelijkheid van de website is goed voor mensen die: niet goed kunnen lezen of zien. Door het gebruik van spraak leest de computer voor welke pagina de gebruiker op is en wat er in beeld komt.
+  Bij de ruimte tussen shirts op de zoekpagina zit iets te weinig ruimte om het duidelijk te maken.
+  Een aantal img's hebben geen alt attribute.
+  Ook gebruikt de website geen h1 element.
+  Ook maakt de website niet gebruikt van video en audio, al is het gebruik voor slechtziende goed te doen.
+  Sommige van de links zijn niet recognisable als links.
+  De color contract bij de website is zo goed als altijd goed volgens AA. Bij een aantal text die overlapt bij images wordt de contrast niet goed volgens AA maar dit heb ik maar 1 keer kunnen vinden, bij een scherm waar ik niet aan ga werken.
+  
 
 </details>
 
