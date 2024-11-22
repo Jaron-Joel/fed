@@ -27,7 +27,7 @@
 /****************/
 
 header {
-	background-color: darkgreen;
+	background-color: rgb(29, 90, 41);
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, auto);
@@ -79,4 +79,12 @@ section a p:nth-of-type(1){
 }
 section a p:nth-of-type(2){
 	grid-area: 3 / 3 / 4 / 5;
+}
+
+/****************/
+/* FOOTER */
+/****************/
+
+footer{
+	background-color: rgb(29, 90, 41);
 }
