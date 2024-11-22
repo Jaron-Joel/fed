@@ -20,12 +20,63 @@
 }
 
 
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
 /* jouw code */
 
+/****************/
+/* HEADER */
+/****************/
+
+header {
+	background-color: darkgreen;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+}
+
+header img{
+	width: 15em;
+}
+
+/* currency */
+header nav:nth-of-type(1){
+	display: flex;
+	justify-content: space-evenly;
+	grid-area: 1 / 1 / 2 / 5;
+}
+header nav:nth-of-type(1).toonMenu{
+	translate: 0;
+}
+/* hamburger menu */
+header img{
+	grid-area: 2 / 1 / 3 / 3; 
+}
+
+header div {
+	grid-area: 2 / 3 / 3 / 5;
+}
+
+
+/****************/
+/* MAIN */
+/****************/
+
+a img{
+	size: 3em;
+}
+section{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, auto);
+}
+section a img{
+	grid-area: 1 / 1 / 4 / 3; 
+}
+section a h3{
+	grid-area: 1 / 3 / 2 / 5;
+}
+section a p:nth-of-type(1){
+	grid-area: 2 / 3 / 3 / 5;
+}
+section a p:nth-of-type(2){
+	grid-area: 3 / 3 / 4 / 5;
+}
