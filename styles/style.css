@@ -23,14 +23,31 @@
 /* jouw code */
 
 /****************/
+/* VAN ALLES EN NOG WAT */
+/****************/
+
+button:hover{
+	cursor: pointer;
+}
+a:hover{
+	cursor: pointer;
+}
+
+/****************/
 /* HEADER */
 /****************/
 
 header {
 	background-color: rgb(29, 90, 41);
+	color: white;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, auto);
+}
+
+header a{
+	color: white;
+	text-decoration: none;
 }
 
 header img{
@@ -63,10 +80,19 @@ header div {
 a img{
 	size: 3em;
 }
+a img:nth-of-type(1){
+	position: relative;
+	overflow: hidden;
+}
 section{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(3, auto);
+}
+section a{
+	color: black;
+	text-decoration: none;
+	text-transform:capitalize;
 }
 section a img{
 	grid-area: 1 / 1 / 4 / 3; 
@@ -80,11 +106,24 @@ section a p:nth-of-type(1){
 section a p:nth-of-type(2){
 	grid-area: 3 / 3 / 4 / 5;
 }
-
+h4{
+	position:absolute;
+	right:1em;
+	top:0;
+	width:12rem;
+	rotate:6deg;
+	transform-origin:right top;
+	text-align:center;
+	color: white;
+}
 /****************/
 /* FOOTER */
 /****************/
 
 footer{
 	background-color: rgb(29, 90, 41);
+	color: white;
+}
+footer a {
+	color: white;
 }
