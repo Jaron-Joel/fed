@@ -6,8 +6,9 @@ header {
 	background-color:rgb(29, 90, 41);
 	color: white;
 	display:flex;
-	justify-content:space-between;
-	
+	align-items: center;
+	margin-bottom: 4em;
+
 	flex-wrap:wrap;
 }
 
@@ -19,20 +20,53 @@ header div {
 	justify-content:center;
 	gap:1em;
 }
-header div img{
-	/* SNAP HIER GEEN TYFUS VAN */
-	width: 20em;
+
+@media (width > 40em){
+	header div img{
+		size: 100px;
+	}
 }
+
+header div img{
+	width: max(40%, 12em);
+	align-self: center;
+}
+
+header div:nth-of-type(1) a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
 
 
 /****************/
 /* MAIN */
 /****************/
+
+main {
+	color: black;
+
+}
+button:hover{
+	cursor: pointer;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
 p{
 	font-size: 1.2em;
 }
+
 h3{
 	font-size: 1.5em;
+}
+
+li{
+	font-size: 1.2em;
 }
 
 /****************/
@@ -42,7 +76,9 @@ h3{
 footer{
 	background-color: rgb(29, 90, 41);
 	color: white;
+	margin-top: 5em;
 }
-footer a {
+footer a ul li{
 	color: white;
+	list-style: none;
 }
