@@ -47,7 +47,7 @@ header div:nth-of-type(1) a {
 
 main {
 	color: black;
-
+	margin: 1em;
 }
 button:hover{
 	cursor: pointer;
@@ -58,16 +58,13 @@ a:hover{
 }
 
 p{
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 h3{
-	font-size: 1.5em;
-}
-
-li{
 	font-size: 1.2em;
 }
+
 
 /****************/
 /* FOOTER */
