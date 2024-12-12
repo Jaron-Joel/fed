@@ -9,7 +9,17 @@
 /****************/
 /* MAIN */
 /****************/
-
+@media (width > 50em){
+	main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+	section:nth-of-type(1){
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	
+}
 
 /* eerste section (fotos enzo) */
 
@@ -41,6 +51,7 @@ section:has( [value="voorkantshirt"]:checked ) img:nth-of-type(2) {
 } 
 
 @media (width > 40em) {
+
 	section:nth-of-type(1) {
 		grid-template-columns:max-content 1fr;	
 	}
@@ -52,6 +63,30 @@ section:has( [value="voorkantshirt"]:checked ) img:nth-of-type(2) {
 	section form {
 		display:flex;
 		flex-direction:column;
+	}
+}
+
+@media (width > 50em){
+	section:nth-of-type(2) ul li:nth-of-type(1) button {
+		color: white;
+		font-size: 1.5em;
+		background-color: rgb(29, 90, 41);
+		border-radius: 0.5em;
+		width: 80%; 
+		max-width: 30em;
+		display: flex;
+		justify-content: center;
+	}
+
+	section:nth-of-type(2) ul li:nth-of-type(2) button {
+		color: white;
+		font-size: 1.5em;
+		background-color: rgb(14, 166, 44);
+		border-radius: 0.5em;
+		width: 80%; 
+		max-width: 30em;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -85,7 +120,11 @@ section:nth-of-type(2) ul li:nth-of-type(1) button {
 	color: white;
 	font-size: 1.5em;
 	background-color: rgb(29, 90, 41);
-	width: 80%;
+	border-radius: 0.5em;
+	width: 40%; 
+	max-width: 30em;
+	display: flex;
+	justify-content: center;
 }
   
 section:nth-of-type(2) ul li:nth-of-type(1) button:hover {
@@ -98,7 +137,11 @@ section:nth-of-type(2) ul li:nth-of-type(2) button {
 	color: white;
 	font-size: 1.5em;
 	background-color: rgb(14, 166, 44);
-	width: 80%;
+	border-radius: 0.5em;
+	width: 40%; 
+	max-width: 30em;
+	display: flex;
+	justify-content: center;
 }
   
 section:nth-of-type(2) ul li:nth-of-type(2) button:hover {
