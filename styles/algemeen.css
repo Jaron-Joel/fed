@@ -1,3 +1,18 @@
+@font-face {
+	font-family: 'Trebuchet MS', sans-serif;
+	src: url();
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+
 /****************/
 /* HEADER */
 /****************/
@@ -27,19 +42,80 @@ header div {
 	}
 }
 
-header div img{
-	width: max(40%, 12em);
-	align-self: center;
-}
-
 header div:nth-of-type(1) a {
 	color: white;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
 	display: block;
-  }
+}
+header div:nth-of-type(1) img:nth-of-type(1){
+	height: 2em;
+	width: auto;
+}
+header div:nth-of-type(1) img:nth-of-type(2){
+	height: 2em;
+	width: auto;
+}
+header div:nth-of-type(1) img:nth-of-type(3){
+	height: 2em;
+	width: auto;
+}
+header div img{
+	width: max(40%, 12em);
+	align-self: center;
+}
+header div img:hover{
+	cursor: pointer;
+}
 
+/* Hoe ik het probeerde */
+/* header nav div:nth-of-type(1){
+	background-color: rgb(29, 90, 41);
+	height: 1en;
+	width: 1em;
+	max-width: 50em;
+	position: fixed;
+	top: 0;
+	right: -4em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+	transition: .5s ease;
+}
+
+header nav div:nth-of-type(1){
+	right: 0;
+}
+
+header nav{
+	padding: 1em;
+	display: flex;
+	background-color: rgb(29, 90, 41);
+}
+header nav div{
+	height: 5em;
+	width: 5em;
+}
+header nav div span{
+	height: 5em;
+	width: 100%;
+	background-color: white;
+	border-radius: 25%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .5s ease;
+}
+header nav div span:nth-of-type(1){
+	top: 25%;
+}
+header nav div span:nth-of-type(1){
+	top: 75%;
+} */
 
 /****************/
 /* MAIN */
@@ -47,7 +123,9 @@ header div:nth-of-type(1) a {
 
 main {
 	color: black;
-	margin: 1em;
+	padding: 1em;
+	width: 80em;
+	margin: auto;
 }
 button:hover{
 	cursor: pointer;
@@ -63,6 +141,10 @@ p{
 
 h3{
 	font-size: 1.2em;
+}
+
+body{
+	margin: 0;
 }
 
 
