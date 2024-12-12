@@ -56,6 +56,7 @@ ul:nth-of-type(1) li a{
 }
 
 /* shirts */
+
 ul:nth-of-type(1) li a img{
 	width: 15em;
 	justify-content: center;
@@ -65,8 +66,6 @@ main ul:nth-of-type(1) li a{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, auto);
-	grid-column-gap: 1em;
-	padding: 0;
 }
 
 main ul:nth-of-type(1) li a img{
@@ -88,21 +87,13 @@ main ul:nth-of-type(1) li a p:nth-of-type(2) {
 
 
 /* De shirts */
-@media (width > 40em) {
-	main >:not(:first-child){
-		background-color: pink;
-		width: 80em;
-		margin: auto;
-	}
-
+@media (width > 80em) {
 	h1:nth-of-type(1){
 		width: 20em;
-		margin-left: 6.5em;
 		margin-bottom: 0.8em;
 	}
 	h2:nth-of-type(1){
 		width: 20em;
-		margin-left: 8.65em;
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
